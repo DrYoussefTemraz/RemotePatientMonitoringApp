@@ -17,7 +17,7 @@
   --container-2xl: 1400px;
 
   /* ---------- Colors ---------- */
- --color-green-500: #24ae7c;
+  --color-green-500: #24ae7c;
   --color-green-600: #0d2a1f;
 
   --color-blue-500: #79b5ec;
@@ -90,11 +90,10 @@
 
   /* Remove scrollbar - Cross-browser solution */
   .remove-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;     /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
-  
-  /* WebKit browsers (Chrome, Safari) */
+
   .remove-scrollbar::-webkit-scrollbar {
     display: none;
     width: 0;
@@ -108,14 +107,14 @@
 @layer utilities {
   /* Layout */
   .sidebar {
-  @apply w-full max-w-72 flex-col overflow-auto;
-  scrollbar-width: none;
-}
+    @apply w-full max-w-72 flex-col overflow-auto;
+    scrollbar-width: none;
+  }
 
-.sidebar::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
+  .sidebar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 
   .left-sidebar {
     @apply hidden lg:flex;
@@ -125,8 +124,9 @@
     @apply hidden xl:flex;
   }
 
-  .container {
-    @apply relative flex-1 overflow-y-auto px-[5%];
+  .app-container {
+    @apply relative mx-auto flex-1 overflow-y-auto px-8;
+    max-width: 1400px;
   }
 
   .sub-container {
@@ -202,11 +202,11 @@
 
   /* Forms */
   .radio-group {
-    @apply flex flex-1 items-center gap-2 rounded-md border border-dashed border-(--dark-500) bg-(--dark-400) p-3;
+    @apply flex flex-1 items-center gap-2 rounded-md border border-dashed border-dark-500 bg-dark-400 p-3;
   }
 
   .file-upload {
-    @apply flex cursor-pointer flex-col items-center justify-center gap-3 rounded-md border border-dashed border-(--dark-500) bg-(--dark-400) p-5;
+    @apply flex cursor-pointer flex-col items-center justify-center gap-3 rounded-md border border-dashed border-dark-500 bg-dark-400 p-5;
   }
 }
 
@@ -214,20 +214,20 @@
    SHADCN / LIBRARY OVERRIDES
 ========================================================= */
 .shad-primary-btn {
-  background-color: var(--green-500) !important;
+  background-color: var(--color-green-500) !important;
   color: white !important;
 }
 
 .shad-danger-btn {
-  background-color: var(--red-700) !important;
+  background-color: var(--color-red-700) !important;
   color: white !important;
 }
 
 .shad-input,
 .shad-textArea,
 .shad-select-trigger {
-  background-color: var(--dark-400) !important;
-  border-color: var(--dark-500) !important;
+  background-color: var(--color-dark-400) !important;
+  border-color: var(--color-dark-500) !important;
   color: white !important;
 }
 
@@ -237,12 +237,12 @@
 .react-datepicker,
 .react-datepicker__header,
 .react-datepicker__day {
-  background-color: var(--dark-400) !important;
-  color: var(--dark-700) !important;
+  background-color: var(--color-dark-400) !important;
+  color: var(--color-dark-700) !important;
 }
 
 .react-datepicker__day--selected {
-  background-color: var(--green-500) !important;
+  background-color: var(--color-green-500) !important;
   color: white !important;
 }
 
@@ -250,7 +250,7 @@
    PHONE INPUT
 ========================================================= */
 .PhoneInputInput {
-  background-color: var(--dark-400);
+  background-color: var(--color-dark-400);
   color: white;
   outline: none;
 }
