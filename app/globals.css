@@ -17,24 +17,24 @@
   --container-2xl: 1400px;
 
   /* ---------- Colors ---------- */
-  --green-500: #24ae7c;
-  --green-600: #0d2a1f;
+ --color-green-500: #24ae7c;
+  --color-green-600: #0d2a1f;
 
-  --blue-500: #79b5ec;
-  --blue-600: #152432;
+  --color-blue-500: #79b5ec;
+  --color-blue-600: #152432;
 
-  --red-500: #f37877;
-  --red-600: #3e1716;
-  --red-700: #f24e43;
+  --color-red-500: #f37877;
+  --color-red-600: #3e1716;
+  --color-red-700: #f24e43;
 
-  --light-200: #e8e9e9;
+  --color-light-200: #e8e9e9;
 
-  --dark-200: #0d0f10;
-  --dark-300: #131619;
-  --dark-400: #1a1d21;
-  --dark-500: #363a3d;
-  --dark-600: #76828d;
-  --dark-700: #abb8c4;
+  --color-dark-200: #0d0f10;
+  --color-dark-300: #131619;
+  --color-dark-400: #1a1d21;
+  --color-dark-500: #363a3d;
+  --color-dark-600: #76828d;
+  --color-dark-700: #abb8c4;
 
   /* ---------- Background Images ---------- */
   --bg-appointments: url("/assets/images/appointments-bg.png");
@@ -200,11 +200,11 @@
 
   /* Forms */
   .radio-group {
-    @apply flex flex-1 items-center gap-2 rounded-md border border-dashed border-[var(--dark-500)] bg-[var(--dark-400)] p-3;
+    @apply flex flex-1 items-center gap-2 rounded-md border border-dashed border-(--dark-500) bg-(--dark-400) p-3;
   }
 
   .file-upload {
-    @apply flex cursor-pointer flex-col items-center justify-center gap-3 rounded-md border border-dashed border-[var(--dark-500)] bg-[var(--dark-400)] p-5;
+    @apply flex cursor-pointer flex-col items-center justify-center gap-3 rounded-md border border-dashed border-(--dark-500) bg-(--dark-400) p-5;
   }
 }
 
