@@ -5,6 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex h-screen max-h-screen">
+      {/* OTB VERIFICATION | PASS KEY MODEL */}
       <section className="remove-scrollbar app-container my-auto">
         <div className="sub-container max-w-[496px]">
           <Image
@@ -27,15 +28,12 @@ export default function Home() {
 
       </section>
       <Image
-      src='/assets/images/onboarding-img.png'
+      src='/assets/images/joeboardingimg.png'
       alt="patient"
       width={1000}
       height={1000}
       className="side-img max-w-[50%]"
       />
-
-
-
     </div>
   );
 }
