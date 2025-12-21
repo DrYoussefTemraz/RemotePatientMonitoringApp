@@ -8,6 +8,8 @@ import {
     FormLabel,
     FormMessage,
 } from "@/components/ui/form"
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 import { Input } from "@/components/ui/input"
 import { Control } from "react-hook-form"
 import { FormFieldType } from "./forms/PatientForm"
@@ -44,13 +46,27 @@ const RenderField = ({ field, props }: { field: any, props: CustomProps }) => {
                         />
                     )}
                     <FormControl>
-                        <Input 
-                        placeholder={placeholder}
-                        {...field}
-                        className="shad-input border-0"
+                        <Input
+                            placeholder={placeholder}
+                            {...field}
+                            className="shad-input border-0"
                         />
                     </FormControl>
                 </div>
+            )
+        case FormFieldType.PHONE_INPUT:
+            return (
+                <FormControl>
+                    <PhoneInput            
+                    defaultCountry="US"
+                    placeholder = {placeholder}
+                    international
+                    withCountryCallingCode
+                    value={field.value}
+                    onChange={field.onChange}
+                    className="input-phone"
+                    />
+                </FormControl>
             )
 
         default:

@@ -13,7 +13,7 @@ const fontSans = Plus_Jakarta_Sans({
 
 
 export const metadata: Metadata = {
-  title: "CarePulse - Healthcare Management",
+  title: "Youssef Patients Appointments Platform - Healthcare Management",
   description: "Advanced healthcare management platform for medical professionals and patients",
 };
 

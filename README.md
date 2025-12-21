@@ -46,3 +46,6 @@ add some notes here
 add shadcn components and follow their documentation 
 https://ui.shadcn.com/
 https://ui.shadcn.com/docs/components/form
+npm liberary react-phone-number-input 
+https://www.npmjs.com/package/react-phone-number-input
+
