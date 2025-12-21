@@ -34,9 +34,8 @@ export default function Home() {
         <Image
           src='/assets/images/joeboardingimg.png'
           alt="Onboarding"
-          fill
-          className="object-cover"
-          priority
+          width={1000}
+          height={1000}
         />
       </div>
     </div>
