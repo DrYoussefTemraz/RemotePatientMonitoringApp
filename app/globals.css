@@ -124,8 +124,8 @@
     @apply hidden xl:flex;
   }
 
-  .app-container {
-    @apply relative mx-auto flex-1 overflow-y-auto px-8;
+  .container {
+    @apply relative flex-1 overflow-y-auto px-[5%];
     max-width: 1400px;
   }
 
@@ -216,6 +216,11 @@
 .shad-primary-btn {
   background-color: var(--color-green-500) !important;
   color: white !important;
+}
+
+/* Side Image Styles */
+.side-img {
+  @apply hidden h-full object-cover md:block;
 }
 
 /* Phone Input Styles */
