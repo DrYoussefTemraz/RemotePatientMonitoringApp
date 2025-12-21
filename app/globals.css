@@ -54,6 +54,7 @@
   from {
     height: 0;
   }
+
   to {
     height: var(--radix-accordion-content-height);
   }
@@ -63,17 +64,20 @@
   from {
     height: var(--radix-accordion-content-height);
   }
+
   to {
     height: 0;
   }
 }
 
 @keyframes caret-blink {
+
   0%,
   70%,
   100% {
     opacity: 1;
   }
+
   20%,
   50% {
     opacity: 0;
@@ -105,6 +109,7 @@
    UTILITIES
 ========================================================= */
 @layer utilities {
+
   /* Layout */
   .sidebar {
     @apply w-full max-w-72 flex-col overflow-auto;
@@ -127,6 +132,8 @@
   .container {
     @apply relative flex-1 overflow-y-auto px-[5%];
     max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .sub-container {
@@ -227,13 +234,20 @@
 .PhoneInput {
   --PhoneInputCountryFlag-border: 1px solid var(--color-dark-500);
   --PhoneInputCountrySelectArrow-color: var(--color-dark-700);
-  margin-top: 0.5rem; /* mt-2 */
-  height: 2.75rem; /* h-11 */
-  border-radius: 0.375rem; /* rounded-md */
-  padding: 0 0.75rem; /* px-3 */
-  font-size: 0.875rem; /* text-sm */
-  border: 1px solid var(--color-dark-500); /* border border-dark-500 */
-  background-color: var(--color-dark-400); /* bg-dark-400 */
+  margin-top: 0.5rem;
+  /* mt-2 */
+  height: 2.75rem;
+  /* h-11 */
+  border-radius: 0.375rem;
+  /* rounded-md */
+  padding: 0 0.75rem;
+  /* px-3 */
+  font-size: 0.875rem;
+  /* text-sm */
+  border: 1px solid var(--color-dark-500);
+  /* border border-dark-500 */
+  background-color: var(--color-dark-400);
+  /* bg-dark-400 */
 }
 
 .PhoneInputInput {
@@ -245,7 +259,8 @@
   height: 100%;
   padding: 0;
   margin: 0;
-  font-size: 0.875rem; /* text-sm */
+  font-size: 0.875rem;
+  /* text-sm */
 }
 
 .PhoneInputInput:focus {
@@ -254,7 +269,8 @@
 }
 
 .PhoneInputInput::placeholder {
-  color: var(--color-dark-600); /* placeholder:text-dark-600 */
+  color: var(--color-dark-600);
+  /* placeholder:text-dark-600 */
 }
 
 /* Country selector styles */
@@ -264,7 +280,7 @@
 
 .PhoneInputCountrySelect {
   color: var(--color-green-100);
-  background:  var(--color-dark-300);
+  background: var(--color-dark-300);
   border: none;
   padding: 0;
   margin: 0;
