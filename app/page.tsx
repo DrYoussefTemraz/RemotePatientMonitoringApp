@@ -8,16 +8,16 @@ export default function Home() {
       {/* Left side - Form */}
       <div className="flex-1 overflow-y-auto">
         <section className="remove-scrollbar container h-full">
-          <div className="sub-container max-w-[496px] py-10">
+          <div className="sub-container max-w-[496px] py-5">
             <Image
               src='/assets/icons/logo-full.svg'
               alt="patient"
               width={1000}
               height={1000}
-              className="mb-12 h-10 w-fit"
+              className="mb-5 h-10 w-fit"
             />
             <PatientForm />
-            <div className="text-14-regular mt-20 flex justify-between">
+            <div className="text-14-regular mt-10 flex justify-between">
               <p className="text-dark-600">
                 © 2025 CarePulse
               </p>
@@ -30,12 +30,14 @@ export default function Home() {
       </div>
 
       {/* Right side - Image */}
-      <div className="hidden md:block w-1/2 relative h-full">
+      <div className="hidden md:flex w-1/2 h-full relative overflow-hidden">
         <Image
           src='/assets/images/joeboardingimg.png'
           alt="Onboarding"
-          width={1000}
-          height={1000}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover w-full h-full"
+          priority
         />
       </div>
     </div>
