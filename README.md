@@ -49,3 +49,6 @@ https://ui.shadcn.com/docs/components/form
 npm liberary react-phone-number-input 
 https://www.npmjs.com/package/react-phone-number-input
 
+installing the appwrite sdk
+npm install appwrite
+
